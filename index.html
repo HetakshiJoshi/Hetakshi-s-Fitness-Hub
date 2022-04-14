@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Hetakshi's Fitness Hub</title>
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Reset */
+        body{
+            font-family: 'Dancing Script', cursive;
+            color:white;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg');
+            background-repeat: no-repeat;
+            /*background-size: 2119px 1415px;*/
+            width: 100%;
+            height: 100%;
+        }
+        .left{
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border: 2px solid red;*/
+        }
+        .left img{
+            width: 180px;  
+            cursor: auto;
+        }
+        .left div{
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            cursor: default;
+        }
+
+        .mid{
+            display:block;
+            width: 40%;
+            margin: 20px auto;
+            /*border: 2px solid blue;*/
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            color: skyblue;
+            text-decoration: underline;
+            padding: 10px 20px;
+        }
+
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border: 2px solid violet;*/
+        }
+        .btn{
+            font-family: 'Dancing Script', cursive;
+            margin: 15px 10px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding: 4px 14px;
+            background-color: navy;
+            border: 2px solid skyblue;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: skyblue;
+            color: black;
+        }
+
+        .container{
+            border: 5px solid skyblue;
+            margin: 120px 178px;
+            padding: 0px 0px;
+            width: 40%;
+            height: 392px;
+            border-radius: 10px;
+        }
+
+        .container h1{
+            text-align: center;
+            font-size: 30px;
+            color: navy;
+        }
+        
+        .container button{
+            display: block;
+            width: 120px;
+            margin: auto;
+
+        }
+
+        .form input{
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 5px;
+            border: 2px solid skyblue;
+            margin: 10px auto;
+            font-size: 22px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <body>
+        <header class="'header">
+            
+            <!-- Left box for logo -->
+            <div class="left">
+                <img src="logo.png" alt="">
+                <div>Hetakshi's Fitness Hub</div>   
+            </div>
+            
+            <!-- Mid box for navigation bar -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right box for buttons -->
+            <div class="right">
+                <button class="btn">Sign In</button>
+                <button class="btn">Sign Up</button>
+            </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best gym in Nashik now....</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <div class="form">
+                <input type="numbers" name="" placeholder="Enter your WhatsApp No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>
